@@ -1,0 +1,267 @@
+/* list of animations */
+
+/*1- appear */
+/*2- float */
+/*3- enter-bottom */
+/*4- out-bottom */
+
+.appear{
+    animation: appear 1.2s ease-in;
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+}
+
+.float{
+    animation: float 2s ease infinite;
+}
+
+@keyframes float {
+    from{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-15%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+
+/*
+    75%{
+        transform: translateY(25%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+*/
+}
+
+
+.enterBottom{
+    animation: enter-bottom 1s ease-in;
+}
+
+
+@keyframes enter-bottom{
+    0%{
+        transform: translateY(130%);
+    }
+    20%{
+        transform: translateY(-10%)
+    }
+    40%{
+        transform: translateY(-10%)  
+    }
+    100%{
+        transform: translateY(0%);
+    }
+  }
+
+  .outBottom{
+    animation: out-bottom 1s ease-out; 
+  }
+
+  @keyframes out-bottom{
+    0%{
+        transform: translateY(0%);
+      }
+    20%{
+        transform: translateY(-25%)
+    }
+    40%{
+        transform: translateY(-25%)  
+    }
+    100%{
+        transform: translateY(130%);
+    }
+  }
+
+/*
+.zoomIn{
+    animation: zoomIn 1.3s linear infinite;
+}
+
+@keyframes zoomIn{
+    from{
+        transform-origin: center center;
+        transform: scale(1,1);
+    }
+    to{
+        transform-origin: center center;
+        transform: scale(2,2);
+    }
+}
+
+.zoomOff{
+    animation: zoomOff 1.3s linear infinite;
+}
+
+@keyframes zoomOff{
+    from{
+        transform: scale(20);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+*/
+/* */
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+  
+  .principal-container{
+    height: 100vh;
+    /*background-image: url('https://wallpaperaccess.com/full/148421.jpg');*/
+    /*background-image:url('https://cdn.dribbble.com/users/831521/screenshots/14055332/media/26b0897729dac255e0c81faffac7cb91.jpg'); */
+    /*background-image: url('https://cdn.dribbble.com/users/159888/screenshots/7059551/media/2e3fad77320e790aa43c7746aedb5c71.png');*/
+    background:#f7efd8;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .container-section{
+    background: red;
+  }
+
+  /* image container */
+  
+  .image-container{
+    width: 70%;
+    margin-top: 5%;
+    height: 70%;
+    margin-left: 15%;    
+    position: fixed;
+  }
+
+  .image{
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  /* console container */
+
+  .console-container{
+    width: 70%;
+    margin-top: 5%;
+    height: 70%;
+    margin-left: 15%;    
+    position: fixed;
+  }
+
+  .console{
+    width: 60%;
+    height: 80%;
+    margin-left: 20%;
+    margin-top: 5%;
+    background-color: #00303b;
+    border-radius: 15px;
+  }
+
+  .console-bar{
+    position: absolute;
+    width: inherit;
+    height: 35px;
+    background: #ffce96;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .console-content{
+    position: absolute;
+    height: 70%;
+    width: inherit;
+  }
+
+  .console-text{
+    margin-top: 6%;
+    margin-left: 5%;
+    color: #f1f2da;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;    
+  }
+
+  /* cards container*/
+
+  .cards-container{
+    width: 30%;
+    margin-top: 15%;
+    height: 30%;
+    margin-left: 35%;
+    border-radius: 20px;    
+    position: fixed;
+    background: #a3dbc1 ;
+  }
+
+  .card-api{
+    left: 33%;
+    top:22%;
+    background: #00363e;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 99;
+    position: fixed;
+}
+
+  .text-api{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px !important;
+    font-weight: 600;
+    margin-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .card-tokens{
+    left: 45%;
+    top: 37%;
+    background: #366c4f;
+    border-radius: 10px;
+    text-align: center;
+    position: fixed;
+  }
+
+  .text-tokens{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px !important;
+    font-weight: 600;
+    margin-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .card-modificable{
+    left: 40%;
+    top: 55%;
+    background: #ff9f46; 
+    border-radius: 10px;
+    text-align: center;
+    position: fixed;
+
+  }
+
+  .celular{
+    display: none;
+  }
+
+  @media (max-width: 900px){
+    .celular{
+      display: block;
+    }
+
+    .escritorio{
+      display: none;
+    }
+  }

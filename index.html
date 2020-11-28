@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class="principal-container appear">
+        <div id="sectionFrameStart" class="container-section" v-if="seen">
+            <div class="image-container" v-bind:class="{ outBottom :a_outBottom, enterBottom :a_enterBottom }">
+                <img class="image" v-bind:class="{ float: a_float}" src="https://cdn.dribbble.com/users/789882/screenshots/14020562/media/6ff65db9c4dc4dde4cf3dd94078cc411.png">
+            </div>
+        </div>
+
+        <div id="sectionConsole" class="container-section" v-if="seen">
+          <div class="console-container">
+            <div class="console">
+              <div class="console-bar">
+              </div>
+              <div class="console-content">
+
+                <h1 class="console-text">> Generador de apis con mongoldb</h1>
+  
+                <h1 class="console-text">> Aplica control de tokens en un middleware <br>con control de permisos de usuario y encriptación </h1>
+                
+                <h1 class="console-text">> Totalmente modificable</h1>
+
+                <h1 class="console-text" style="color:#ff7777">> Hecho con ♡ por vase technologies.</h1>
+
+                <h1 class="console-text">> ¿Como se usa generaApi?</h1>
+              </div>
+              
+            </div>
+          </div>
+          <!--
+          <div class="image-container" v-bind:class="{ outBottom :a_outBottom, enterBottom :a_enterBottom }">
+              <img class="image" v-bind:class="{ float: a_float}" src="https://cdn.dribbble.com/users/648922/screenshots/14246817/media/e676fda4442d8e35ee44d4934172bef4.png">
+          </div>
+        -->
+      </div>
+
+        <!--
+        <div class="container-section">
+          <div id="sectionFrameCards" class="cards-container" v-if="seen">
+            <div class="card-api" v-bind:class="{outBottom :a_outBottom, enterBottom :a_enterBottom }">
+              <h1 class="text-api">Generador de apis con mongoldb</h1>
+            </div>
+            <div class="card-tokens" v-bind:class="{outBottom :a_outBottom, enterBottom :a_enterBottom }">
+              <h1 class="text-tokens">Aplica control de tokens en un middleware <br>con control de permisos de usuario y encriptación </h1>
+            </div>
+            <div class="card-modificable" v-bind:class="{outBottom :a_outBottom, enterBottom :a_enterBottom }">
+              <h1 class="text-tokens">Totalmente Modificable</h1>
+            </div>
+          </div>
+        </div>
+        -->
+        <!--
+        <div class="container-section">
+            <div id="console-hello" class="console-hello">
+                <div class="console-bar">
+                    <h1 class="bar-title">{{ message }}</h1>
+                </div>
+            </div>
+        </div>
+     -->
+     <button id="button"></button>
+     <button id="button2"></button>
+     <button id="button3"></button>
+     <button id="button4"></button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
