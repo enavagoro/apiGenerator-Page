@@ -14,12 +14,12 @@
     <div class="principal-container appear">
         <div id="sectionFrameStart" class="container-section" v-if="seen">
             <div class="image-container" v-bind:class="{ outBottom :a_outBottom, enterBottom :a_enterBottom }">
-                <img class="image" v-bind:class="{ float: a_float}" src="https://cdn.dribbble.com/users/789882/screenshots/14020562/media/6ff65db9c4dc4dde4cf3dd94078cc411.png">
+                <img class="image" v-bind:class="{ float: a_float}" src="https://cdn.dribbble.com/users/648922/screenshots/14246817/media/e676fda4442d8e35ee44d4934172bef4.png">
             </div>
         </div>
 
-        <div id="sectionConsole" class="container-section" v-if="seen">
-          <div class="console-container">
+        <div id="sectionConsole" class="container-section"  v-if="seen" v-bind:class="{ appear : a_appear, disappear : a_disappear}">
+          <div class="console-container" v-bind:class="{ floatLeft : a_floatLeft}">
             <div class="console">
               <div class="console-bar">
               </div>
@@ -34,6 +34,18 @@
                 <h1 class="console-text" style="color:#ff7777">> Hecho con ♡ por vase technologies.</h1>
 
                 <h1 class="console-text">> ¿Como se usa generaApi?</h1>
+                
+                <pre id="taag_output_text" style="float:left;" class="fig" contenteditable="true">                             
+                  
+                  -----------------
+                  ( Click Here to learn )
+                   -----------------
+                          o   ^__^
+                           o  (oO)\_______
+                              (__)\       )\/\
+                               U  ||----w |
+                                  ||     || 
+                </pre>
               </div>
               
             </div>

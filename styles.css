@@ -4,9 +4,12 @@
 /*2- float */
 /*3- enter-bottom */
 /*4- out-bottom */
+/*5- float-left */
+/*6- rotate */
+/*7- disappear */
 
 .appear{
-    animation: appear 1.2s ease-in;
+    animation: appear .5s ease-in;
 }
 
 @keyframes appear{
@@ -83,6 +86,57 @@
     }
   }
 
+  .floatLeft{
+    animation: float-left 5s ease infinite;
+  } 
+
+@keyframes float-left {
+    from{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-15%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+  }
+
+  .rotate{
+    animation: rotate 5s ease infinite;
+  }
+
+  @keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    25%{
+      transform: rotate(360deg);
+    }
+    50%{
+      transform: rotate(360deg);
+    }
+    75%{
+      transform: rotate(360deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
+  .disappear{
+    animation: disappear .5s ease-in;
+}
+
+@keyframes disappear{
+    0%{
+        opacity: 1;
+      }
+      100%{
+        opacity: 0;
+      }
+  }
+
 /*
 .zoomIn{
     animation: zoomIn 1.3s linear infinite;
@@ -126,7 +180,7 @@ body{
     /*background-image: url('https://wallpaperaccess.com/full/148421.jpg');*/
     /*background-image:url('https://cdn.dribbble.com/users/831521/screenshots/14055332/media/26b0897729dac255e0c81faffac7cb91.jpg'); */
     /*background-image: url('https://cdn.dribbble.com/users/159888/screenshots/7059551/media/2e3fad77320e790aa43c7746aedb5c71.png');*/
-    background:#f7efd8;
+    background:white;
     background-position: 50% 50%;
     background-size: cover;
   }
@@ -161,7 +215,7 @@ body{
 
   .console{
     width: 60%;
-    height: 80%;
+    height: 90%;
     margin-left: 20%;
     margin-top: 5%;
     background-color: #00303b;
@@ -189,6 +243,13 @@ body{
     color: #f1f2da;
     font-size: 19px;
     font-family: 'Roboto', sans-serif;    
+  }
+
+  .fig{
+    color: #ffce96;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
   }
 
   /* cards container*/
